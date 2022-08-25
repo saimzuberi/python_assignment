@@ -1,0 +1,8 @@
+FINANCIAL ANALYSIS 
+-------------------------------------------------------------------------------------
+Total no. of rows: 87
+Field names are:Date, Profit/Losses
+Total no. of months: 86
+The average of the changes in Profit/Losses over the entire period is $-2315.12 
+Greatest Increase in Profits ['Feb-2012']1926159
+Greatest decrease in losses: ['Sep-2013']-2196167
