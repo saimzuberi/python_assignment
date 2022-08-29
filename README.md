@@ -4,42 +4,41 @@
 ### Background
 You've made it! It's time to put away the Excel sheet and join the big leagues. Welcome to the world of programming with Python. In this homework assignment, you'll be using the concepts you've learned to complete the required PyBank Python activity, and if you wish to stretch your skills even further, the optional PyRamen Python activity. Both activities present a real-world situation in which your newfound Python skills will come in handy. These activities are far from easy, though, so expect some hard work ahead!
 
-### Before You Begin
+### Actions performed
 
 
-Create a new GitHub repo called python-homework. Then, clone it to your computer.
+Created a new GitHub repo called python-assignment. Then, cloned it to my computer.
 
 
-In your local git repository, create a directory for both of the Python activities. Use folder names that correspond to the activities: PyBank and PyRamen.
+In my local git repository, created a directory for both of the Python activities. Use folder names that correspond to the activities: PyBank and PyRamen.
 
 
-In each folder you just created, add a new file called main.ipynb. Remember that to create this file you will need to use JupyterLab to correctly generate the .ipynb file format. This will be the main notebook to run for each analysis.
-
-
-Push the above changes to GitHub.
-
+In each folder I created main.ipynb and i pushed the changes to GitHub
 
 
 ### PyBank (Required)
 
-In this activity, you are tasked with creating a Python script for analyzing the financial records of your company. You will be provided with a financial dataset in this file: budget_data.csv. This dataset is composed of two columns, Date and Profit/Losses. (Thankfully, your company has rather lax standards for accounting, so the records are simple.)
-Your task is to create a Python script that analyzes the records to calculate each of the following:
+In this activity, I created a Python script for analyzing the financial records of the company without using pandas. 
 
+I used the financial dataset in this file: budget_data.csv. 
+
+This dataset was composed of two columns, Date and Profit/Losses. 
 
 The total number of months included in the dataset.
-
+    I calculated this by adding total number of rows in the col - 1 to get the total number of months. 
 
 The net total amount of Profit/Losses over the entire period.
-
+    I calculated this by sum of all rows of the profit/loss column.
 
 The average of the changes in Profit/Losses over the entire period.
+    I calculated this by using a while loop and adding differences between each months profit and loss and adding this as a separate column. 
 
 
 The greatest increase in profits (date and amount) over the entire period.
-
+    In order to perform the maximum increase with data and amount i created a dictionary with differential month and differential amounts and used max function to identify the increase in profits. 
 
 The greatest decrease in losses (date and amount) over the entire period.
-
+    In order to perform the maximum increase with data and amount i used the previously created dictionary with differential month and differential amounts and used min function to identify the increase in profits.
 
 Your resulting analysis should look similar to the following:
 
@@ -53,20 +52,52 @@ Greatest Decrease in Profits: Sep-2013 ($-2196167)
 
 
 Your final script should print the analysis to the terminal and export a text file with the results.
+    my final output is available in Financial_Ananlysis.txt file which i created using output file.  
 
 ## PyRamen (Optional)
 
 
 ### Background
-Welcome to Ichiban Ramen!
-Opening a ramen shop has always been your dream, and now it's finally been realized––you're closing out on your second year of sales! Like last year, you need to analyze your business's financial performance by cross-referencing your sales data with your internal menu data to figure out revenues and costs for the year.
-This year, you also want to analyze how well your business did on a per-product basis (as you have several choices of ramen) in order to better understand which products are doing well, which are doing poorly, and, ultimately, which products may need to be removed or changed.
-You tried doing this type of per-product analysis last year in Excel, but you were not able to keep your reports up-to-date with your current sales data. Therefore, you need to innovate. With more customers and more data to process, you'll need a tool that will allow you to automate your calculations in a manner that scales with your business.
-Enter Python! Python provides a wide range of capabilities for handling data, harnessing the power of low-level Python data structures and high-level development libraries, all the while supporting the automation and scalability needs for a growing enterprise.
-In this homework assignment, you will need to:
+In order to perform analysis of PyRamen business, i have utilized the full capabilities of Pandas which we have learned so far. 
 
+    Imported the 2 files and saved them as data frames 
+    I tried to concatecate the files but realized that this will not work as it concatenates the row and and i had to use merge based on index. 
+    Once the new data frame was created, i cleaned the data by droping unnessary columns. 
+    created new columns with new calculations including
+        Revenue = Quantity x Price
+        Cost of Goods = Quantity x Cost
+        Profit = Revenue - Cost of Goods
 
-Read the Data
+    Imported the data in a new data frame and cleaned unnessary columns including price and cost of goods
+    The final data was presented in the file Financial_Analysis.txt
 
+FINANCIAL ANALYSIS 
+-------------------------------------------------------------------------------------
+                                                Quantity   revenue    cog  \
+index                                                                       
+burnt garlic tonkotsu ramen                         9070  126980.0  54420   
+miso crab ramen                                     8890  106680.0  53340   
+nagomi shoyu                                        9132  100452.0  45660   
+shio ramen                                          9180  100980.0  45900   
+soft-shell miso crab ramen                          9130  127820.0  63910   
+spicy miso ramen                                    9238  110856.0  46190   
+tonkotsu ramen                                      9288  120744.0  55728   
+tori paitan ramen                                   9156  119028.0  54936   
+truffle butter ramen                                8982  125748.0  62874   
+vegetarian curry + king trumpet mushroom ramen      8824  114712.0  61768   
+vegetarian spicy miso                               9216  110592.0  46080   
 
-Manipulate the Data
+                                                 profit  
+index                                                    
+burnt garlic tonkotsu ramen                     72560.0  
+miso crab ramen                                 53340.0  
+nagomi shoyu                                    54792.0  
+shio ramen                                      55080.0  
+soft-shell miso crab ramen                      63910.0  
+spicy miso ramen                                64666.0  
+tonkotsu ramen                                  65016.0  
+tori paitan ramen                               64092.0  
+truffle butter ramen                            62874.0  
+vegetarian curry + king trumpet mushroom ramen  52944.0  
+vegetarian spicy miso                           64512.0 
+

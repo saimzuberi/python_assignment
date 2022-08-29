@@ -1,0 +1,29 @@
+FINANCIAL ANALYSIS 
+-------------------------------------------------------------------------------------
+                                                Quantity   revenue    cog  \
+index                                                                       
+burnt garlic tonkotsu ramen                         9070  126980.0  54420   
+miso crab ramen                                     8890  106680.0  53340   
+nagomi shoyu                                        9132  100452.0  45660   
+shio ramen                                          9180  100980.0  45900   
+soft-shell miso crab ramen                          9130  127820.0  63910   
+spicy miso ramen                                    9238  110856.0  46190   
+tonkotsu ramen                                      9288  120744.0  55728   
+tori paitan ramen                                   9156  119028.0  54936   
+truffle butter ramen                                8982  125748.0  62874   
+vegetarian curry + king trumpet mushroom ramen      8824  114712.0  61768   
+vegetarian spicy miso                               9216  110592.0  46080   
+
+                                                 profit  
+index                                                    
+burnt garlic tonkotsu ramen                     72560.0  
+miso crab ramen                                 53340.0  
+nagomi shoyu                                    54792.0  
+shio ramen                                      55080.0  
+soft-shell miso crab ramen                      63910.0  
+spicy miso ramen                                64666.0  
+tonkotsu ramen                                  65016.0  
+tori paitan ramen                               64092.0  
+truffle butter ramen                            62874.0  
+vegetarian curry + king trumpet mushroom ramen  52944.0  
+vegetarian spicy miso                           64512.0  
